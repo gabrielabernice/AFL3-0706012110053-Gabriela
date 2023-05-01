@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "bevName": "Air Mineral",
+    "price": 3000,
+    "cafe": "Tuku-Tuku"
+  },
+  {
+    "id": 2,
+    "bevName": "Es Lychee",
+    "price": 15000,
+    "cafe": "Gotri"
+  },
+  {
+    "id": 3,
+    "bevName": "Es Teh Manis",
+    "price": 5000,
+    "cafe": "Madam Lie"
+  },
+  {
+    "id": 4,
+    "bevName": "Kopi Tarik Kopte",
+    "price": 15000,
+    "cafe": "Kopte"
+  },
+  {
+    "id": 5,
+    "bevName": "Es Cincau",
+    "price": 17000,
+    "cafe": "Kopte"
+  },
+  {
+    "id": 6,
+    "bevName": "Teh Kundur",
+    "price": 14000,
+    "cafe": "Kopte"
+  },
+  {
+    "id": 7,
+    "bevName": "Milo Dinosaur",
+    "price": 16000,
+    "cafe": "Kopte"
+  },
+  {
+    "id": 8,
+    "bevName": "Kopi O",
+    "price": 12000,
+    "cafe": "Xiang Jia"
+  },
+  {
+    "id": 9,
+    "bevName": "Teh Tarik",
+    "price": 16000,
+    "cafe": "Xiang Jia"
+  }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "foodName": "Tahu Isi",
+        "price": 5000,
+        "cafe": "Tuku-Tuku"
+    },
+    {
+        "id": 2,
+        "foodName": "Nasi Kuning",
+        "price": 15000,
+        "cafe": "Tuku-Tuku"
+    },
+    {
+        "id": 3,
+        "foodName": "Nasi Campur",
+        "price": 20000,
+        "cafe": "Tuku-Tuku"
+    },
+    {
+        "id": 4,
+        "foodName": "Popmie Goreng",
+        "price": 7000,
+        "cafe": "Tuku-Tuku"
+    },
+    {
+        "id": 5,
+        "foodName": "Beef Rendang",
+        "price": 30000,
+        "cafe": "Gotri"
+    },
+    {
+        "id": 6,
+        "foodName": "Fried Rice",
+        "price": 37500,
+        "cafe": "Gotri"
+    },
+    {
+        "id": 7,
+        "foodName": "Gotri Signature",
+        "price": 20000,
+        "cafe": "Gotri"
+    },
+    {
+        "id": 8,
+        "foodName": "Mala Chicken",
+        "price": 25000,
+        "cafe": "Gotri"
+    },
+    {
+        "id": 9,
+        "foodName": "Nasi Ayam Geprek",
+        "price": 20000,
+        "cafe": "Madam Lie"
+    },
+    {
+        "id": 10,
+        "foodName": "Nasi Ayam Bakar",
+        "price": 25000,
+        "cafe": "Madam Lie"
+    },
+    {
+        "id": 11,
+        "foodName": "Nasi Goreng",
+        "price": 30000,
+        "cafe": "Madam Lie"
+    },
+    {
+        "id": 12,
+        "foodName": "Mie Goreng",
+        "price": 25000,
+        "cafe": "Madam Lie"
+    },
+    {
+        "id": 13,
+        "foodName": "Toast Kaya Butter",
+        "price": 18000,
+        "cafe": "Kopte"
+    },
+    {
+        "id": 14,
+        "foodName": "Mie Kosong Selatpanjang",
+        "price": 25000,
+        "cafe": "Xiang Jia"
+    },
+    {
+        "id": 15,
+        "foodName": "Nasi Ayam Hainan",
+        "price": 30000,
+        "cafe": "Xiang Jia"
+    },
+    {
+        "id": 16,
+        "foodName": "Mie Ayam Kobe",
+        "price": 25000,
+        "cafe": "Xiang Jia"
+    }
+]
