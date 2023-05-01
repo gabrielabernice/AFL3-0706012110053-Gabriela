@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// to provide the cafe details which are showing foods and beverages of the cafe
+// to provide the cafe details which are showing foods and beverages of the cafe, that is being seperated into two different tabs (foods and beverages)
 struct CafeDetail: View {
     @EnvironmentObject var modelData: ModelData
     var cafe: Cafe
@@ -16,19 +16,20 @@ struct CafeDetail: View {
     
     var body: some View {
         TabView {
-            FoodView(food: modelData.food.filter{$0.cafe == cafe.name})
+            FoodView(food: food)
                 .tabItem {
                     Label("Food", systemImage: "fork.knife")
                 }
             
-            BevView(bev: modelData.bev.filter{$0.cafe == cafe.name})
+            BevView(bev: bev)
                 .tabItem {
-                    Label("Beverages", systemImage: "cup")
+                    Label("Beverages", systemImage: "wineglass")
                 }
         }
     }
 }
 
+// to make the food list of the cafe
 struct FoodView: View {
     var food: [Food]
     
@@ -36,7 +37,7 @@ struct FoodView: View {
         NavigationView {
             List(food) { foods in
                 NavigationLink {
-                    // order page
+                    foodOrder(food: foods)
                 } label: {
                     HStack {
                         Text(foods.foodName)
@@ -51,6 +52,7 @@ struct FoodView: View {
     }
 }
 
+// to make the bev list of the cafe
 struct BevView: View {
     var bev: [Bev]
     
@@ -58,7 +60,7 @@ struct BevView: View {
         NavigationView {
             List(bev) { bevs in
                 NavigationLink {
-                    // order page
+                    bevOrder()
                 } label: {
                     HStack {
                         Text(bevs.bevName)
