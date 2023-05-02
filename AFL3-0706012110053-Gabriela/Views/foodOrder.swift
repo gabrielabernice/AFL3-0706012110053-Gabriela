@@ -1,13 +1,15 @@
 //
-//  foodOrder.swift
+//  FoodOrder.swift
 //  AFL3-0706012110053-Gabriela
 //
-//  Created by MacBook Pro on 01/05/23.
+//  Created by MacBook Pro on 02/05/23.
 //
 
 import SwiftUI
 
-struct foodOrder: View {
+import SwiftUI
+
+struct FoodOrder: View {
     @State var quantity: String = ""
     @EnvironmentObject var modelData: ModelData
     var food: Food
@@ -22,6 +24,7 @@ struct foodOrder: View {
                 .bold()
                 .multilineTextAlignment(.center)
             
+            // to allow the user to input the amount of foods they want to buy
             TextField("Enter quantity", text: $quantity)
                 .padding(.horizontal, 20)
                 .padding(.vertical, 10)
@@ -34,6 +37,7 @@ struct foodOrder: View {
                 )
                 .keyboardType(.numberPad)
             
+            // if the input does not meet the requirements, a warning text will be shown
             if !check{
                 Text("Please enter a valid quantity\n(only numbers above 0)")
                     .foregroundColor(.red)
@@ -41,21 +45,21 @@ struct foodOrder: View {
                     .multilineTextAlignment(.center)
             }
             
+            // showing the price of the food
             Text("💰: Rp. \(food.price) each")
                 .font(.subheadline)
                 .bold()
                 .padding(.vertical)
             
+            // showing the total price based on the user input
             Text("💰: Rp. \(food.price * (Int(quantity) ?? 0)) total")
                 .font(.subheadline)
                 .bold()
                 .padding(.bottom)
             
-            Button(action: {
-                // Code to be executed when the button is tapped
-                print("Button tapped!")
-            }) {
-                Text("Add to cart")
+            // to redirect the user to the purchase screen, the button will be disabled if the input does not meet the requirements
+            NavigationLink(destination: PurchasedScreen(quantity: Int(quantity) ?? 0, name: food.foodName, totalprice: food.price * (Int(quantity) ?? 0))) {
+                Text("Purchase")
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                     .padding()
@@ -73,11 +77,11 @@ struct foodOrder: View {
     }
 }
 
-struct foodOrder_Previews: PreviewProvider {
+struct FoodOrder_Previews: PreviewProvider {
     static let modelData = ModelData()
     
     static var previews: some View {
-        foodOrder(food: modelData.food[0])
+        FoodOrder(food: modelData.food[0])
             .environmentObject(modelData)
     }
 }

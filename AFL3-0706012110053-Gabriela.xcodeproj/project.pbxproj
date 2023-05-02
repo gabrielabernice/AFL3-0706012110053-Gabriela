@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		049D614A29FF9C8A00639738 /* CafeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D614929FF9C8A00639738 /* CafeDetail.swift */; };
-		049D614C29FFE55600639738 /* foodOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D614B29FFE55600639738 /* foodOrder.swift */; };
-		049D614E29FFE56400639738 /* bevOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D614D29FFE56400639738 /* bevOrder.swift */; };
-		049D615029FFE82500639738 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D614F29FFE82500639738 /* ShoppingCart.swift */; };
 		04C0548129FEB25D007CDAD9 /* AFL3_0706012110053_GabrielaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0548029FEB25D007CDAD9 /* AFL3_0706012110053_GabrielaApp.swift */; };
 		04C0548329FEB25D007CDAD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0548229FEB25D007CDAD9 /* ContentView.swift */; };
 		04C0548529FEB25E007CDAD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C0548429FEB25E007CDAD9 /* Assets.xcassets */; };
@@ -23,13 +20,13 @@
 		04C0549C29FEC699007CDAD9 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0549B29FEC699007CDAD9 /* MainScreen.swift */; };
 		04C0549E29FECD4A007CDAD9 /* cafeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C0549D29FECD4A007CDAD9 /* cafeData.json */; };
 		04C054A029FECD57007CDAD9 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0549F29FECD57007CDAD9 /* Cafe.swift */; };
+		04C30C6F2A01490A00AAADC6 /* FoodOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C30C6E2A01490A00AAADC6 /* FoodOrder.swift */; };
+		04C30C712A01494D00AAADC6 /* BevOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C30C702A01494D00AAADC6 /* BevOrder.swift */; };
+		04C30C732A0149A500AAADC6 /* PurchasedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C30C722A0149A500AAADC6 /* PurchasedScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		049D614929FF9C8A00639738 /* CafeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDetail.swift; sourceTree = "<group>"; };
-		049D614B29FFE55600639738 /* foodOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodOrder.swift; sourceTree = "<group>"; };
-		049D614D29FFE56400639738 /* bevOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bevOrder.swift; sourceTree = "<group>"; };
-		049D614F29FFE82500639738 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 		04C0547D29FEB25D007CDAD9 /* AFL3-0706012110053-Gabriela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AFL3-0706012110053-Gabriela.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C0548029FEB25D007CDAD9 /* AFL3_0706012110053_GabrielaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL3_0706012110053_GabrielaApp.swift; sourceTree = "<group>"; };
 		04C0548229FEB25D007CDAD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +40,9 @@
 		04C0549B29FEC699007CDAD9 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		04C0549D29FECD4A007CDAD9 /* cafeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cafeData.json; sourceTree = "<group>"; };
 		04C0549F29FECD57007CDAD9 /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
+		04C30C6E2A01490A00AAADC6 /* FoodOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOrder.swift; sourceTree = "<group>"; };
+		04C30C702A01494D00AAADC6 /* BevOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BevOrder.swift; sourceTree = "<group>"; };
+		04C30C722A0149A500AAADC6 /* PurchasedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,9 +120,9 @@
 			children = (
 				04C0549B29FEC699007CDAD9 /* MainScreen.swift */,
 				049D614929FF9C8A00639738 /* CafeDetail.swift */,
-				049D614B29FFE55600639738 /* foodOrder.swift */,
-				049D614D29FFE56400639738 /* bevOrder.swift */,
-				049D614F29FFE82500639738 /* ShoppingCart.swift */,
+				04C30C6E2A01490A00AAADC6 /* FoodOrder.swift */,
+				04C30C702A01494D00AAADC6 /* BevOrder.swift */,
+				04C30C722A0149A500AAADC6 /* PurchasedScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,17 +200,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049D614E29FFE56400639738 /* bevOrder.swift in Sources */,
+				04C30C712A01494D00AAADC6 /* BevOrder.swift in Sources */,
+				04C30C6F2A01490A00AAADC6 /* FoodOrder.swift in Sources */,
+				04C30C732A0149A500AAADC6 /* PurchasedScreen.swift in Sources */,
 				04C0549C29FEC699007CDAD9 /* MainScreen.swift in Sources */,
 				04C0548329FEB25D007CDAD9 /* ContentView.swift in Sources */,
 				04C0549729FEBF1E007CDAD9 /* Bev.swift in Sources */,
 				04C0549A29FEBFAE007CDAD9 /* ModelData.swift in Sources */,
-				049D615029FFE82500639738 /* ShoppingCart.swift in Sources */,
 				04C0548129FEB25D007CDAD9 /* AFL3_0706012110053_GabrielaApp.swift in Sources */,
 				049D614A29FF9C8A00639738 /* CafeDetail.swift in Sources */,
 				04C0549529FEBA5D007CDAD9 /* Food.swift in Sources */,
 				04C054A029FECD57007CDAD9 /* Cafe.swift in Sources */,
-				049D614C29FFE55600639738 /* foodOrder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

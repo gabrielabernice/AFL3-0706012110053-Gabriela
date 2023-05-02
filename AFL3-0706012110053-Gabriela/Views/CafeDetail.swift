@@ -29,7 +29,7 @@ struct CafeDetail: View {
     }
 }
 
-// to make the food list of the cafe
+// to make the food list of the cafe and its price
 struct FoodView: View {
     var food: [Food]
     
@@ -37,7 +37,7 @@ struct FoodView: View {
         NavigationView {
             List(food) { foods in
                 NavigationLink {
-                    foodOrder(food: foods)
+                    FoodOrder(food: foods)
                 } label: {
                     HStack {
                         Text(foods.foodName)
@@ -52,7 +52,7 @@ struct FoodView: View {
     }
 }
 
-// to make the bev list of the cafe
+// to make the bev list of the cafe and its price
 struct BevView: View {
     var bev: [Bev]
     
@@ -60,7 +60,7 @@ struct BevView: View {
         NavigationView {
             List(bev) { bevs in
                 NavigationLink {
-                    bevOrder()
+                    BevOrder(bev: bevs)
                 } label: {
                     HStack {
                         Text(bevs.bevName)

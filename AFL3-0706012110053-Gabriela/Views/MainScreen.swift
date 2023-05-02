@@ -23,41 +23,22 @@ struct MainScreen: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
-                // to list all of the cafes and redirect the user to cafedetail screen after selecting the cafe
-                List(cafes) { cafe in
-                    NavigationLink {
-                        CafeDetail(cafe: cafe, food: foods.filter { $0.cafe == cafe.name }, bev: bevs.filter{$0.cafe == cafe.name})
-                    } label: {
-                        VStack(alignment: .leading) {
-                            Text(cafe.name)
-                        }
-                    }
-                    .padding(.vertical)
-                    .tag(cafe)
-                }
-                
-                // to make the shopping cart button
-                VStack {
-                    Spacer()
-                    HStack {
-                        Spacer()
-                        NavigationLink(destination: ShoppingCart()) {
-                            Image(systemName: "cart")
-                                .font(.title)
-                                .foregroundColor(.white)
-                        }
-                        .padding()
-                        .background(Color(red: 0.4, green: 0.6, blue: 1.0))
-                        .clipShape(Circle())
-                        .padding(.trailing, 20)
-                        .padding(.bottom, 20)
+            // to list all of the cafes and redirect the user to cafedetail screen after selecting the cafe
+            List(cafes) { cafe in
+                NavigationLink {
+                    CafeDetail(cafe: cafe, food: foods.filter { $0.cafe == cafe.name }, bev: bevs.filter{$0.cafe == cafe.name})
+                } label: {
+                    VStack(alignment: .leading) {
+                        Text(cafe.name)
                     }
                 }
-                
-                .navigationTitle("UC-Walk Cafeteria 👨🏻‍🍳👩🏻‍🍳")
-                .navigationBarTitleDisplayMode(.inline)
+                .padding(.vertical)
+                .tag(cafe)
             }
+            
+            .navigationTitle("UC-Walk Cafeteria 👨🏻‍🍳👩🏻‍🍳")
+            .navigationBarTitleDisplayMode(.inline)
+            
         }
     }
 }
