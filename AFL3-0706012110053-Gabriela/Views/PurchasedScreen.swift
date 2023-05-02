@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct PurchasedScreen: View {
+    @Environment(\.dismiss) var dismiss
     var quantity: Int
     var name: String
     var totalprice: Int
-    
     
     var body: some View {
         VStack{
@@ -37,19 +37,6 @@ struct PurchasedScreen: View {
             
             Text("Please show this screen to the cashier")
                 .font(.headline)
-            
-            // to let the user go back to the main menu
-            NavigationLink(destination: MainScreen()) {
-                Text("Main Screen")
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color(red: 0.4, green: 0.6, blue: 1.0))
-                
-                    .background(Color(red: 134/255, green: 198/255, blue: 141/255))
-                    .cornerRadius(10)
-            }
-
             
             Spacer()
         }
